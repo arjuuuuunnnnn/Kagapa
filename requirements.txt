@@ -1,0 +1,11 @@
+IPython
+glob2
+soundfile
+torchaudio
+torch
+denoiser
+transformers
+jiwer
+punctuators
+om-transliterator
+

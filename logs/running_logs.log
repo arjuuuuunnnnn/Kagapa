@@ -1,0 +1,811 @@
+[2024-07-03 21:48:27,235: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-03 21:48:47,454: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-03 21:48:47,456: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-03 21:48:47,457: INFO: main: ********** Stage 1 Speech Separation started **********]
+[2024-07-03 21:48:47,457: INFO: s_01_SPEECH_SEP: Processing: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-07-03 21:48:50,466: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-07-03 21:48:59,894: INFO: s_01_SPEECH_SEP: Speaker SPEAKER_00: 1.6 - 11.6]
+[2024-07-03 21:48:59,894: INFO: s_01_SPEECH_SEP: Diarization results written to /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/CSV/Cleaned_denoiser_facebook_1_input.mp3_diarization.csv]
+[2024-07-03 21:48:59,894: INFO: s_01_SPEECH_SEP: Total number of speakers detected: 1]
+[2024-07-03 21:48:59,894: INFO: s_01_SPEECH_SEP: CSV Header: ['speaker', 'start_time', 'stop_time']]
+[2024-07-03 21:48:59,894: INFO: s_01_SPEECH_SEP: CSV Row 0: ['speaker_SPEAKER_00', '1.6', '11.6']]
+[2024-07-03 21:48:59,894: INFO: s_01_SPEECH_SEP: Running command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input/speaker_SPEAKER_00_0.mp3]
+[2024-07-03 21:49:00,028: INFO: s_01_SPEECH_SEP: Processed Cleaned_denoiser_facebook_1_input.mp3. Output in /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input]
+[2024-07-03 21:49:00,029: INFO: main: ********** Stage 1 Speech Separation completed **********
+
+]
+[2024-07-03 21:49:00,029: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-03 21:49:06,504: INFO: s_02_ASR_ADDY88: Original Transcription: <s>ನ<s>ಾ<s>ನು<s> <s>ಹೆ<s>ಸ<s>ರು<s> <s>ಸ<s>ಮ<s>ೃ<s>ದ್<s> <s>ನ<s>ನ<s>ಗೆ<s> <s>ನ<s>ಾ<s>ಯಿ<s> <s>ಹ<s>ಸು<s> <s>ಮ<s>ತ್<s>ತು<s> <s>ಬೆ<s>ಕ್<s>ಕು<s> <s>ಇ<s>ಷ<s>್<s>ಟ<s> <s>ನಿ<s>ನ್<s>ನ<s>ಗೆ<s> <s>ಹೆ<s>ಸ<s>ರ<s>ೇ<s>ನು<s> <s>ನ<s>ಾ<s>ನ<s>ು<s> <s>ಪಿ<s>ಎ<s>ಸ<s>್<s> <s>ವಿ<s>ಶ್<s>ವ<s>ವ<s>ಿ<s>ದ್<s>ಯ<s>ವಿ<s>ದ್<s>ಯ<s>ಾ<s>ಲ<s>ಯ<s>ದ<s>ಲ್<s>ಲಿ<s> <s>ಓ<s>ದ<s>ು<s>ತ್<s>ತ<s>ಿ<s>ದ್ದ<s>ೇ<s>ನೆ<s> <s>]
+[2024-07-03 21:49:06,505: INFO: s_02_ASR_ADDY88: Cleaned Transcription: ನಾನು ಹೆಸರು ಸಮೃದ್ ನನಗೆ ನಾಯಿ ಹಸು ಮತ್ತು ಬೆಕ್ಕು ಇಷ್ಟ ನಿನ್ನಗೆ ಹೆಸರೇನು ನಾನು ಪಿಎಸ್ ವಿಶ್ವವಿದ್ಯವಿದ್ಯಾಲಯದಲ್ಲಿ ಓದುತ್ತಿದ್ದೇನೆ]
+[2024-07-03 21:49:06,505: INFO: s_02_ASR_ADDY88: Transcription saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_02/02_transcription.txt]
+[2024-07-03 21:49:06,505: INFO: main: ********** Stage 2 Audio Transcription completed **********
+
+]
+[2024-07-03 21:49:06,505: INFO: main: ********** Stage 3 Text Punctuation started **********]
+[2024-07-03 21:49:09,495: INFO: s_03_PUNCT_PCS47LANG: Punctuation results saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_03/03_punctuation.txt]
+[2024-07-03 21:49:09,495: INFO: main: ********** Stage 3 Text Punctuation completed **********
+
+]
+[2024-07-03 21:49:09,495: INFO: main: ********** Stage 4 Transliteration started **********]
+[2024-07-03 21:49:09,495: INFO: s_04_TRANSLIT_OM: Transliterated text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_04/04_transliteration.txt]
+[2024-07-03 21:49:09,495: INFO: main: ********** Stage 4 Transliteration completed **********
+
+]
+[2024-07-03 21:49:09,495: INFO: main: ********** Stage 5 Translation started **********]
+[2024-07-03 21:49:33,615: INFO: s_05_TRANSLATE_AI4BHARAT: Translations saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_05/05_translation.txt]
+[2024-07-03 21:49:33,616: INFO: main: ********** Stage 5 Translation completed **********
+
+]
+[2024-07-03 21:49:33,616: INFO: main: ********** Stage 6 English Grammar Correction started **********]
+[2024-07-03 21:49:40,921: INFO: s_06_ENG_GRAMMAR_VENNIFY: Corrected text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_06/06_english_grammar.txt]
+[2024-07-03 21:49:40,924: INFO: s_06_ENG_GRAMMAR_VENNIFY: Original: My name is Hemanth, I am studying in TS University, I am a second year student.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.]
+[2024-07-03 21:49:40,924: INFO: s_06_ENG_GRAMMAR_VENNIFY: Corrected: Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.]
+[2024-07-03 21:49:40,924: INFO: main: ********** Stage 6 English Grammar Correction completed **********
+
+]
+[2024-07-03 22:17:11,704: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-03 22:17:30,698: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-03 22:17:30,701: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-03 22:17:30,701: INFO: main: ********** Stage 1 Speech Separation started **********]
+[2024-07-03 22:17:30,701: INFO: s_01_SPEECH_SEP: Processing: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-07-03 22:17:33,692: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-07-03 22:17:42,738: INFO: s_01_SPEECH_SEP: Speaker SPEAKER_00: 1.6 - 11.6]
+[2024-07-03 22:17:42,738: INFO: s_01_SPEECH_SEP: Diarization results written to /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/CSV/Cleaned_denoiser_facebook_1_input.mp3_diarization.csv]
+[2024-07-03 22:17:42,738: INFO: s_01_SPEECH_SEP: Total number of speakers detected: 1]
+[2024-07-03 22:17:42,739: INFO: s_01_SPEECH_SEP: CSV Header: ['speaker', 'start_time', 'stop_time']]
+[2024-07-03 22:17:42,739: INFO: s_01_SPEECH_SEP: CSV Row 0: ['speaker_SPEAKER_00', '1.6', '11.6']]
+[2024-07-03 22:17:42,739: INFO: s_01_SPEECH_SEP: Running command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input/speaker_SPEAKER_00_0.mp3]
+[2024-07-03 22:17:42,875: INFO: s_01_SPEECH_SEP: Processed Cleaned_denoiser_facebook_1_input.mp3. Output in /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input]
+[2024-07-03 22:17:42,875: INFO: main: ********** Stage 1 Speech Separation completed **********
+
+]
+[2024-07-03 22:17:42,875: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-03 22:17:47,647: INFO: s_02_ASR_ADDY88: Original Transcription: <s>ನ<s>ಾ<s>ನು<s> <s>ಹೆ<s>ಸ<s>ರು<s> <s>ಸ<s>ಮ<s>ೃ<s>ದ್<s> <s>ನ<s>ನ<s>ಗೆ<s> <s>ನ<s>ಾ<s>ಯಿ<s> <s>ಹ<s>ಸು<s> <s>ಮ<s>ತ್<s>ತು<s> <s>ಬೆ<s>ಕ್<s>ಕು<s> <s>ಇ<s>ಷ<s>್<s>ಟ<s> <s>ನಿ<s>ನ್<s>ನ<s>ಗೆ<s> <s>ಹೆ<s>ಸ<s>ರ<s>ೇ<s>ನು<s> <s>ನ<s>ಾ<s>ನ<s>ು<s> <s>ಪಿ<s>ಎ<s>ಸ<s>್<s> <s>ವಿ<s>ಶ್<s>ವ<s>ವ<s>ಿ<s>ದ್<s>ಯ<s>ವಿ<s>ದ್<s>ಯ<s>ಾ<s>ಲ<s>ಯ<s>ದ<s>ಲ್<s>ಲಿ<s> <s>ಓ<s>ದ<s>ು<s>ತ್<s>ತ<s>ಿ<s>ದ್ದ<s>ೇ<s>ನೆ<s> <s>]
+[2024-07-03 22:17:47,648: INFO: s_02_ASR_ADDY88: Cleaned Transcription: ನಾನು ಹೆಸರು ಸಮೃದ್ ನನಗೆ ನಾಯಿ ಹಸು ಮತ್ತು ಬೆಕ್ಕು ಇಷ್ಟ ನಿನ್ನಗೆ ಹೆಸರೇನು ನಾನು ಪಿಎಸ್ ವಿಶ್ವವಿದ್ಯವಿದ್ಯಾಲಯದಲ್ಲಿ ಓದುತ್ತಿದ್ದೇನೆ]
+[2024-07-03 22:17:47,648: INFO: s_02_ASR_ADDY88: Transcription saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_02/02_transcription.txt]
+[2024-07-03 22:17:47,648: INFO: main: ********** Stage 2 Audio Transcription completed **********
+
+]
+[2024-07-03 22:17:47,648: INFO: main: ********** Stage 3 Text Punctuation started **********]
+[2024-07-03 22:17:49,669: INFO: s_03_PUNCT_PCS47LANG: Punctuation results saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_03/03_punctuation.txt]
+[2024-07-03 22:17:49,669: INFO: main: ********** Stage 3 Text Punctuation completed **********
+
+]
+[2024-07-03 22:17:49,669: INFO: main: ********** Stage 4 Transliteration started **********]
+[2024-07-03 22:17:49,670: INFO: s_04_TRANSLIT_OM: Transliterated text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_04/04_transliteration.txt]
+[2024-07-03 22:17:49,670: INFO: main: ********** Stage 4 Transliteration completed **********
+
+]
+[2024-07-03 22:17:49,670: INFO: main: ********** Stage 5 Translation started **********]
+[2024-07-03 22:18:14,242: INFO: s_05_TRANSLATE_AI4BHARAT: Translations saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_05/05_translation.txt]
+[2024-07-03 22:18:14,242: INFO: main: ********** Stage 5 Translation completed **********
+
+]
+[2024-07-03 22:18:14,242: INFO: main: ********** Stage 6 English Grammar Correction started **********]
+[2024-07-03 22:18:21,651: INFO: s_06_ENG_GRAMMAR_VENNIFY: Corrected text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_06/06_english_grammar.txt]
+[2024-07-03 22:18:21,653: INFO: s_06_ENG_GRAMMAR_VENNIFY: Original: My name is Hemanth, I am studying in TS University, I am a second year student.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.]
+[2024-07-03 22:18:21,653: INFO: s_06_ENG_GRAMMAR_VENNIFY: Corrected: Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.]
+[2024-07-03 22:18:21,653: INFO: main: ********** Stage 6 English Grammar Correction completed **********
+
+]
+[2024-07-03 22:58:16,757: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-03 22:58:26,864: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-03 22:58:26,865: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-03 22:58:26,866: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-03 22:58:30,792: INFO: s_02_ASR_ADDY88: Original Transcription: <s>ನ<s>ಾ<s>ನು<s> <s>ಹೆ<s>ಸ<s>ರು<s> <s>ಸ<s>ಮ<s>ೃ<s>ದ್<s> <s>ನ<s>ನ<s>ಗೆ<s> <s>ನ<s>ಾ<s>ಯಿ<s> <s>ಹ<s>ಸು<s> <s>ಮ<s>ತ್<s>ತು<s> <s>ಬೆ<s>ಕ್<s>ಕು<s> <s>ಇ<s>ಷ<s>್<s>ಟ<s> <s>ನಿ<s>ನ್<s>ನ<s>ಗೆ<s> <s>ಹೆ<s>ಸ<s>ರ<s>ೇ<s>ನು<s> <s>ನ<s>ಾ<s>ನ<s>ು<s> <s>ಪಿ<s>ಎ<s>ಸ<s>್<s> <s>ವಿ<s>ಶ್<s>ವ<s>ವ<s>ಿ<s>ದ್<s>ಯ<s>ವಿ<s>ದ್<s>ಯ<s>ಾ<s>ಲ<s>ಯ<s>ದ<s>ಲ್<s>ಲಿ<s> <s>ಓ<s>ದ<s>ು<s>ತ್<s>ತ<s>ಿ<s>ದ್ದ<s>ೇ<s>ನೆ<s> <s>]
+[2024-07-03 22:58:30,792: INFO: s_02_ASR_ADDY88: Cleaned Transcription: ನಾನು ಹೆಸರು ಸಮೃದ್ ನನಗೆ ನಾಯಿ ಹಸು ಮತ್ತು ಬೆಕ್ಕು ಇಷ್ಟ ನಿನ್ನಗೆ ಹೆಸರೇನು ನಾನು ಪಿಎಸ್ ವಿಶ್ವವಿದ್ಯವಿದ್ಯಾಲಯದಲ್ಲಿ ಓದುತ್ತಿದ್ದೇನೆ]
+[2024-07-03 22:58:30,792: INFO: s_02_ASR_ADDY88: Transcription saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_02/02_transcription.txt]
+[2024-07-03 22:58:30,792: INFO: main: ********** Stage 2 Audio Transcription completed **********
+
+]
+[2024-07-03 22:58:30,792: INFO: main: ********** Stage 3 Text Punctuation started **********]
+[2024-07-03 22:58:32,695: INFO: s_03_PUNCT_PCS47LANG: Punctuation results saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_03/03_punctuation.txt]
+[2024-07-03 22:58:32,695: INFO: main: ********** Stage 3 Text Punctuation completed **********
+
+]
+[2024-07-03 22:58:32,695: INFO: main: ********** Stage 4 Transliteration started **********]
+[2024-07-03 22:58:32,695: INFO: s_04_TRANSLIT_OM: Transliterated text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_04/04_transliteration.txt]
+[2024-07-03 22:58:32,695: INFO: main: ********** Stage 4 Transliteration completed **********
+
+]
+[2024-07-03 22:58:32,695: INFO: main: ********** Stage 5 Translation started **********]
+[2024-07-03 22:58:52,183: INFO: s_05_TRANSLATE_AI4BHARAT: Translations saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_05/05_translation.txt]
+[2024-07-03 22:58:52,187: INFO: main: ********** Stage 5 Translation completed **********
+
+]
+[2024-07-03 22:58:52,187: INFO: main: ********** Stage 6 English Grammar Correction started **********]
+[2024-07-03 22:58:58,009: INFO: s_06_ENG_GRAMMAR_VENNIFY: Corrected text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_06/06_english_grammar.txt]
+[2024-07-03 22:58:58,010: INFO: s_06_ENG_GRAMMAR_VENNIFY: Original: My name is Hemanth, I am studying in TS University, I am a second year student.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.]
+[2024-07-03 22:58:58,010: INFO: s_06_ENG_GRAMMAR_VENNIFY: Corrected: Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.]
+[2024-07-03 22:58:58,010: INFO: main: ********** Stage 6 English Grammar Correction completed **********
+
+]
+[2024-07-03 23:40:18,939: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-03 23:40:29,493: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-03 23:40:29,495: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-03 23:40:29,496: INFO: main: ********** Stage 1 Audio Splitting started **********]
+[2024-07-03 23:40:29,496: INFO: s_01_AUDIO_SEGMENT: Processing: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-07-03 23:40:37,213: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_1.wav]
+[2024-07-03 23:40:37,215: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_2.wav]
+[2024-07-03 23:40:37,216: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_3.wav]
+[2024-07-03 23:40:37,218: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_4.wav]
+[2024-07-03 23:40:37,220: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_5.wav]
+[2024-07-03 23:40:37,222: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_6.wav]
+[2024-07-03 23:40:37,224: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_7.wav]
+[2024-07-03 23:40:37,225: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_8.wav]
+[2024-07-03 23:40:37,226: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_9.wav]
+[2024-07-03 23:40:37,228: INFO: s_01_AUDIO_SEGMENT: Saved segment: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/segment_10.wav]
+[2024-07-03 23:40:37,228: INFO: main: ********** Stage 1 Audio Splitting completed **********
+
+]
+[2024-07-03 23:40:37,228: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-03 23:40:40,897: INFO: s_02_ASR_ADDY88: Original Transcription: <s>ನ<s>ಾ<s>ನು<s> <s>ಹೆ<s>ಸ<s>ರು<s> <s>ಸ<s>ಮ<s>ೃ<s>ದ್<s> <s>ನ<s>ನ<s>ಗೆ<s> <s>ನ<s>ಾ<s>ಯಿ<s> <s>ಹ<s>ಸು<s> <s>ಮ<s>ತ್<s>ತು<s> <s>ಬೆ<s>ಕ್<s>ಕು<s> <s>ಇ<s>ಷ<s>್<s>ಟ<s> <s>ನಿ<s>ನ್<s>ನ<s>ಗೆ<s> <s>ಹೆ<s>ಸ<s>ರ<s>ೇ<s>ನು<s> <s>ನ<s>ಾ<s>ನ<s>ು<s> <s>ಪಿ<s>ಎ<s>ಸ<s>್<s> <s>ವಿ<s>ಶ್<s>ವ<s>ವ<s>ಿ<s>ದ್<s>ಯ<s>ವಿ<s>ದ್<s>ಯ<s>ಾ<s>ಲ<s>ಯ<s>ದ<s>ಲ್<s>ಲಿ<s> <s>ಓ<s>ದ<s>ು<s>ತ್<s>ತ<s>ಿ<s>ದ್ದ<s>ೇ<s>ನೆ<s> <s>]
+[2024-07-03 23:40:40,897: INFO: s_02_ASR_ADDY88: Cleaned Transcription: ನಾನು ಹೆಸರು ಸಮೃದ್ ನನಗೆ ನಾಯಿ ಹಸು ಮತ್ತು ಬೆಕ್ಕು ಇಷ್ಟ ನಿನ್ನಗೆ ಹೆಸರೇನು ನಾನು ಪಿಎಸ್ ವಿಶ್ವವಿದ್ಯವಿದ್ಯಾಲಯದಲ್ಲಿ ಓದುತ್ತಿದ್ದೇನೆ]
+[2024-07-03 23:40:40,897: INFO: s_02_ASR_ADDY88: Transcription saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_02/02_transcription.txt]
+[2024-07-03 23:40:40,897: INFO: main: ********** Stage 2 Audio Transcription completed **********
+
+]
+[2024-07-03 23:40:40,897: INFO: main: ********** Stage 3 Text Punctuation started **********]
+[2024-07-03 23:40:43,072: INFO: s_03_PUNCT_PCS47LANG: Punctuation results saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_03/03_punctuation.txt]
+[2024-07-03 23:40:43,072: INFO: main: ********** Stage 3 Text Punctuation completed **********
+
+]
+[2024-07-03 23:40:43,072: INFO: main: ********** Stage 4 Transliteration started **********]
+[2024-07-03 23:40:43,073: INFO: s_04_TRANSLIT_OM: Transliterated text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_04/04_transliteration.txt]
+[2024-07-03 23:40:43,073: INFO: main: ********** Stage 4 Transliteration completed **********
+
+]
+[2024-07-03 23:40:43,073: INFO: main: ********** Stage 5 Translation started **********]
+[2024-07-03 23:41:02,734: INFO: s_05_TRANSLATE_AI4BHARAT: Translations saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_05/05_translation.txt]
+[2024-07-03 23:41:02,735: INFO: main: ********** Stage 5 Translation completed **********
+
+]
+[2024-07-03 23:41:02,735: INFO: main: ********** Stage 6 English Grammar Correction started **********]
+[2024-07-03 23:41:08,496: INFO: s_06_ENG_GRAMMAR_VENNIFY: Corrected text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_06/06_english_grammar.txt]
+[2024-07-03 23:41:08,496: INFO: s_06_ENG_GRAMMAR_VENNIFY: Original: My name is Hemanth, I am studying in TS University, I am a second year student.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.]
+[2024-07-03 23:41:08,496: INFO: s_06_ENG_GRAMMAR_VENNIFY: Corrected: Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.]
+[2024-07-03 23:41:08,496: INFO: main: ********** Stage 6 English Grammar Correction completed **********
+
+]
+[2024-07-10 14:53:36,697: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-10 14:53:49,482: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-10 14:53:49,483: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-10 14:53:49,484: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-10 14:53:49,484: ERROR: main: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 61, in <module>
+    transcription = AudioTranscription(audio_file, output_dir, model_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang'
+[2024-07-10 15:10:21,121: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-10 15:10:31,351: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-10 15:10:31,354: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-10 15:10:31,354: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:10:34,965: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:10:35,898: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-07-10 15:10:42,827: INFO: run_stage_01: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-07-10 15:10:43,579: INFO: main: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-07-10 15:10:43,580: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-10 15:10:43,580: ERROR: main: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 54, in <module>
+    transcription = AudioTranscription(audio_file, output_dir, model_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang'
+[2024-07-10 15:12:12,833: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-10 15:12:32,771: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-10 15:12:32,774: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-10 15:12:32,774: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:12:37,941: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:12:39,647: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-07-10 15:12:48,099: ERROR: run_stage_01: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py", line 17, in <module>
+    audio_split.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 85, in main
+    self.process_audio(mp3_file)
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 77, in process_audio
+    shutil.move(os.path.join(output_directory, file), new_dir)
+  File "/usr/lib/python3.11/shutil.py", line 851, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists
+[2024-07-10 15:12:49,125: ERROR: main: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 41, in <module>
+    run_stage_01()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 20, in run_stage_01
+    subprocess.run([stage_01_venv, stage_01_script], check=True)
+  File "/usr/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.
+[2024-07-10 15:14:11,448: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-10 15:14:29,277: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-10 15:14:29,279: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-10 15:14:29,279: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:14:34,042: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:14:35,549: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-07-10 15:14:45,055: ERROR: run_stage_01: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py", line 17, in <module>
+    audio_split.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 85, in main
+    self.process_audio(mp3_file)
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 77, in process_audio
+    shutil.move(os.path.join(output_directory, file), new_dir)
+  File "/usr/lib/python3.11/shutil.py", line 851, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists
+[2024-07-10 15:14:46,074: ERROR: main: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 41, in <module>
+    run_stage_01()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 20, in run_stage_01
+    subprocess.run([stage_01_venv, stage_01_script], check=True)
+  File "/usr/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.
+[2024-07-10 15:16:44,239: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-10 15:17:00,366: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-10 15:17:00,369: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-10 15:17:00,370: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:17:05,176: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:17:12,339: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-07-10 15:17:21,923: INFO: run_stage_01: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-07-10 15:17:22,966: INFO: main: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-07-10 15:17:22,966: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-10 15:17:22,966: ERROR: main: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 54, in <module>
+    transcription = AudioTranscription(audio_file, output_dir, model_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang'
+[2024-07-10 15:34:32,214: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-10 15:34:42,716: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-10 15:34:42,718: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-10 15:34:42,719: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:34:47,348: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:34:47,349: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-07-10 15:34:48,585: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-07-10 15:34:59,022: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-07-10 15:34:59,022: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-07-10 15:34:59,022: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-07-10 15:34:59,105: ERROR: run_stage_01: name 'result' is not defined]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py", line 17, in <module>
+    audio_split.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 94, in main
+    self.process_audio(mp3_file)
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 74, in process_audio
+    if result.returncode != 0:
+       ^^^^^^
+NameError: name 'result' is not defined
+[2024-07-10 15:35:00,151: ERROR: main: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 41, in <module>
+    run_stage_01()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 20, in run_stage_01
+    subprocess.run([stage_01_venv, stage_01_script], check=True)
+  File "/usr/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.
+[2024-07-10 15:36:20,213: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-10 15:36:31,644: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-10 15:36:31,647: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-10 15:36:31,647: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:36:35,195: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-07-10 15:36:35,196: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-07-10 15:36:37,731: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-07-10 15:36:44,756: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-07-10 15:36:44,756: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-07-10 15:36:44,756: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-07-10 15:36:44,817: INFO: s_01_DASHBOARD_FLAVOUR: Created segment file: CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-07-10 15:36:44,817: INFO: s_01_DASHBOARD_FLAVOUR: Total number of files processed: 1]
+[2024-07-10 15:36:44,817: INFO: s_01_DASHBOARD_FLAVOUR: Total number of output files created: 1]
+[2024-07-10 15:36:44,817: INFO: run_stage_01: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-07-10 15:36:45,526: INFO: main: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-07-10 15:36:45,527: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-10 15:36:45,527: ERROR: main: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 54, in <module>
+    transcription = AudioTranscription(audio_file, output_dir, model_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang'
+[2024-07-11 15:04:31,254: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-11 15:04:47,011: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-11 15:04:47,014: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-11 15:04:47,014: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-07-11 15:04:51,509: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-07-11 15:04:51,510: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-07-11 15:04:53,763: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-07-11 15:05:00,326: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-07-11 15:05:00,326: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-07-11 15:05:00,326: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-07-11 15:05:00,394: INFO: s_01_DASHBOARD_FLAVOUR: Created segment file: CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-07-11 15:05:00,394: ERROR: run_stage_01: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py", line 17, in <module>
+    audio_split.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 94, in main
+    self.process_audio(mp3_file)
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 86, in process_audio
+    shutil.move(os.path.join(output_directory, file), new_dir)
+  File "/usr/lib/python3.11/shutil.py", line 851, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists
+[2024-07-11 15:05:01,196: ERROR: main: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 41, in <module>
+    run_stage_01()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 20, in run_stage_01
+    subprocess.run([stage_01_venv, stage_01_script], check=True)
+  File "/usr/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.
+[2024-07-11 15:05:59,614: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-11 15:06:11,680: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-11 15:06:11,682: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-11 15:06:11,683: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-11 15:06:11,683: ERROR: main: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 54, in <module>
+    transcription = AudioTranscription(audio_file, output_dir, model_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang'
+[2024-07-11 15:08:17,830: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-07-11 15:08:29,023: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-07-11 15:08:29,025: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-07-11 15:08:29,025: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-07-11 15:08:31,461: ERROR: main: [Errno 20] Not a directory: '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 56, in <module>
+    transcription.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_02_ASR_ADDY88.py", line 60, in main
+    audio_files = [f for f in os.listdir(self.input_dir) if f.endswith('.mp3')]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [Errno 20] Not a directory: '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3'
+[2024-08-05 18:16:55,535: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 18:20:11,015: INFO: CREATE_DATABASE: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 18:20:22,846: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-08-05 18:20:22,848: INFO: CREATE_DATABASE: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-08-05 18:20:22,848: INFO: CREATE_DATABASE: ********** Stage 2 Audio Transcription started **********]
+[2024-08-05 18:20:22,848: ERROR: CREATE_DATABASE: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/CREATE_DATABASE.py", line 73, in main
+    transcription = AudioTranscription(audio_file, output_dir, model_id)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AudioTranscription.__init__() missing 1 required positional argument: 'target_lang'
+[2024-08-05 18:21:34,361: INFO: CREATE_DATABASE: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 18:21:46,412: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-08-05 18:21:46,414: INFO: CREATE_DATABASE: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-08-05 18:21:46,414: INFO: CREATE_DATABASE: ********** Stage 2 Audio Transcription started **********]
+[2024-08-05 18:21:49,357: ERROR: CREATE_DATABASE: [Errno 20] Not a directory: '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/CREATE_DATABASE.py", line 75, in main
+    transcription.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_02_ASR_ADDY88.py", line 60, in main
+    audio_files = [f for f in os.listdir(self.input_dir) if f.endswith('.mp3')]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [Errno 20] Not a directory: '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3'
+[2024-08-05 18:23:54,580: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 18:24:06,704: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-08-05 18:24:06,706: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-08-05 18:24:06,707: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-08-05 18:24:09,549: ERROR: main: [Errno 20] Not a directory: '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 56, in <module>
+    transcription.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_02_ASR_ADDY88.py", line 60, in main
+    audio_files = [f for f in os.listdir(self.input_dir) if f.endswith('.mp3')]
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+NotADirectoryError: [Errno 20] Not a directory: '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3'
+[2024-08-05 18:38:37,897: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 18:38:48,981: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-08-05 18:38:48,983: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-08-05 18:38:48,984: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 18:38:54,752: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 18:38:54,752: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-08-05 18:38:55,681: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-08-05 18:39:03,055: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-08-05 18:39:03,056: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-08-05 18:39:03,056: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:39:03,132: INFO: s_01_DASHBOARD_FLAVOUR: Created segment file: CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:39:03,132: ERROR: run_stage_01: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py", line 17, in <module>
+    audio_split.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 94, in main
+    self.process_audio(mp3_file)
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 86, in process_audio
+    shutil.move(os.path.join(output_directory, file), new_dir)
+  File "/usr/lib/python3.11/shutil.py", line 851, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists
+[2024-08-05 18:39:04,170: ERROR: main: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 41, in <module>
+    run_stage_01()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 20, in run_stage_01
+    subprocess.run([stage_01_venv, stage_01_script], check=True)
+  File "/usr/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/model2_env/bin/python', '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py']' returned non-zero exit status 1.
+[2024-08-05 18:43:08,603: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 18:43:08,604: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-08-05 18:43:10,121: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-08-05 18:43:17,561: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-08-05 18:43:17,561: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-08-05 18:43:17,561: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:43:17,629: INFO: s_01_DASHBOARD_FLAVOUR: Created segment file: CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:43:17,630: ERROR: run_stage_01: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/run_stage_01.py", line 17, in <module>
+    audio_split.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 94, in main
+    self.process_audio(mp3_file)
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_01_DASHBOARD_FLAVOUR.py", line 86, in process_audio
+    shutil.move(os.path.join(output_directory, file), new_dir)
+  File "/usr/lib/python3.11/shutil.py", line 851, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/Cleaned_denoiser_facebook_1_input.mp3_CUTS/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3' already exists
+[2024-08-05 18:47:20,857: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 18:47:32,838: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-08-05 18:47:32,840: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-08-05 18:47:32,841: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 18:47:37,009: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 18:47:37,009: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-08-05 18:47:37,890: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-08-05 18:47:45,001: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-08-05 18:47:45,001: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-08-05 18:47:45,001: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:47:45,162: INFO: s_01_DASHBOARD_FLAVOUR: Created segment file: CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:47:45,162: INFO: s_01_DASHBOARD_FLAVOUR: Total number of files processed: 1]
+[2024-08-05 18:47:45,162: INFO: s_01_DASHBOARD_FLAVOUR: Total number of output files created: 1]
+[2024-08-05 18:47:45,162: INFO: run_stage_01: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 18:47:46,062: INFO: main: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 18:47:46,062: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-08-05 18:47:49,774: ERROR: main: Number of processes must be at least 1]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 57, in <module>
+    transcription.main()
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_02_ASR_ADDY88.py", line 65, in main
+    with Pool(num_processes) as pool:
+         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/multiprocessing/context.py", line 119, in Pool
+    return Pool(processes, initializer, initargs, maxtasksperchild,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/multiprocessing/pool.py", line 205, in __init__
+    raise ValueError("Number of processes must be at least 1")
+ValueError: Number of processes must be at least 1
+[2024-08-05 18:52:07,355: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 18:52:23,125: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-08-05 18:52:23,127: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-08-05 18:52:23,129: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 18:52:28,115: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 18:52:28,116: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-08-05 18:52:29,409: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-08-05 18:52:40,892: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-08-05 18:52:40,893: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-08-05 18:52:40,893: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:52:41,044: INFO: s_01_DASHBOARD_FLAVOUR: Created segment file: CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:52:41,044: INFO: s_01_DASHBOARD_FLAVOUR: Total number of files processed: 1]
+[2024-08-05 18:52:41,045: INFO: s_01_DASHBOARD_FLAVOUR: Total number of output files created: 1]
+[2024-08-05 18:52:41,045: INFO: run_stage_01: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 18:52:41,945: INFO: main: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 18:52:41,945: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-08-05 18:52:46,161: INFO: main: ********** Stage 2 Audio Transcription completed **********
+
+]
+[2024-08-05 18:52:46,161: INFO: main: ********** Stage 3 Text Punctuation started **********]
+[2024-08-05 18:52:48,649: INFO: s_03_PUNCT_PCS47LANG: Punctuation results saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_03/03_punctuation.txt]
+[2024-08-05 18:52:48,649: INFO: main: ********** Stage 3 Text Punctuation completed **********
+
+]
+[2024-08-05 18:52:48,649: INFO: main: ********** Stage 4 Transliteration started **********]
+[2024-08-05 18:52:48,650: INFO: s_04_TRANSLIT_OM: Transliterated text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_04/04_transliteration.txt]
+[2024-08-05 18:52:48,650: INFO: main: ********** Stage 4 Transliteration completed **********
+
+]
+[2024-08-05 18:52:48,651: INFO: main: ********** Stage 5 Translation started **********]
+[2024-08-05 18:52:57,870: ERROR: main: 'TextTranslation' object has no attribute 'device']
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 94, in <module>
+    translation = TextTranslation(input_file, output_file, model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_05_TRANSLATE_AI4BHARAT.py", line 25, in __init__
+    self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name, trust_remote_code=True).to(self.device)
+                                                                                              ^^^^^^^^^^^
+AttributeError: 'TextTranslation' object has no attribute 'device'
+[2024-08-05 18:58:17,674: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 18:58:29,678: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-08-05 18:58:29,680: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-08-05 18:58:29,680: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 18:58:35,607: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 18:58:35,607: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-08-05 18:58:36,528: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-08-05 18:58:44,113: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-08-05 18:58:44,113: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-08-05 18:58:44,113: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:58:44,194: INFO: s_01_DASHBOARD_FLAVOUR: Created segment file: CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 18:58:44,195: INFO: s_01_DASHBOARD_FLAVOUR: Total number of files processed: 1]
+[2024-08-05 18:58:44,195: INFO: s_01_DASHBOARD_FLAVOUR: Total number of output files created: 1]
+[2024-08-05 18:58:44,195: INFO: run_stage_01: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 18:58:45,226: INFO: main: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 18:58:45,226: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-08-05 18:58:48,514: INFO: main: ********** Stage 2 Audio Transcription completed **********
+
+]
+[2024-08-05 18:58:48,514: INFO: main: ********** Stage 3 Text Punctuation started **********]
+[2024-08-05 18:58:50,587: INFO: s_03_PUNCT_PCS47LANG: Punctuation results saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_03/03_punctuation.txt]
+[2024-08-05 18:58:50,587: INFO: main: ********** Stage 3 Text Punctuation completed **********
+
+]
+[2024-08-05 18:58:50,587: INFO: main: ********** Stage 4 Transliteration started **********]
+[2024-08-05 18:58:50,587: INFO: s_04_TRANSLIT_OM: Transliterated text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_04/04_transliteration.txt]
+[2024-08-05 18:58:50,587: INFO: main: ********** Stage 4 Transliteration completed **********
+
+]
+[2024-08-05 18:58:50,588: INFO: main: ********** Stage 5 Translation started **********]
+[2024-08-05 18:58:50,588: ERROR: main: name 'logging' is not defined]
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 94, in <module>
+    translation = TextTranslation(input_file, output_file, model_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_05_TRANSLATE_AI4BHARAT.py", line 25, in __init__
+    logging.info(f"Using device: {self.device}")
+    ^^^^^^^
+NameError: name 'logging' is not defined
+[2024-08-05 18:59:54,074: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 19:00:05,919: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-08-05 19:00:05,921: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-08-05 19:00:05,921: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 19:00:10,108: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 19:00:10,109: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-08-05 19:00:11,646: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-08-05 19:00:19,599: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-08-05 19:00:19,599: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-08-05 19:00:19,599: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 19:00:19,676: INFO: s_01_DASHBOARD_FLAVOUR: Created segment file: CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 19:00:19,676: INFO: s_01_DASHBOARD_FLAVOUR: Total number of files processed: 1]
+[2024-08-05 19:00:19,677: INFO: s_01_DASHBOARD_FLAVOUR: Total number of output files created: 1]
+[2024-08-05 19:00:19,677: INFO: run_stage_01: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 19:00:20,560: INFO: main: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 19:00:20,561: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-08-05 19:00:23,694: INFO: main: ********** Stage 2 Audio Transcription completed **********
+
+]
+[2024-08-05 19:00:23,694: INFO: main: ********** Stage 3 Text Punctuation started **********]
+[2024-08-05 19:00:25,458: INFO: s_03_PUNCT_PCS47LANG: Punctuation results saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_03/03_punctuation.txt]
+[2024-08-05 19:00:25,458: INFO: main: ********** Stage 3 Text Punctuation completed **********
+
+]
+[2024-08-05 19:00:25,459: INFO: main: ********** Stage 4 Transliteration started **********]
+[2024-08-05 19:00:25,459: INFO: s_04_TRANSLIT_OM: Transliterated text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_04/04_transliteration.txt]
+[2024-08-05 19:00:25,459: INFO: main: ********** Stage 4 Transliteration completed **********
+
+]
+[2024-08-05 19:00:25,459: INFO: main: ********** Stage 5 Translation started **********]
+[2024-08-05 19:00:25,459: INFO: s_05_TRANSLATE_AI4BHARAT: Using device: cpu]
+[2024-08-05 19:00:45,869: INFO: s_05_TRANSLATE_AI4BHARAT: Translations saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_05/05_translation.txt]
+[2024-08-05 19:00:45,870: INFO: main: ********** Stage 5 Translation completed **********
+
+]
+[2024-08-05 19:00:45,870: INFO: main: ********** Stage 6 English Grammar Correction started **********]
+[2024-08-05 19:00:47,428: ERROR: main: Failed to import transformers.models.t5.modeling_tf_t5 because of the following error (look up to see its traceback):
+Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.]
+Traceback (most recent call last):
+  File "/home/hemanth/.venv/lib/python3.11/site-packages/transformers/activations_tf.py", line 22, in <module>
+    import tf_keras as keras
+ModuleNotFoundError: No module named 'tf_keras'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hemanth/.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 1567, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1147, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 690, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/hemanth/.venv/lib/python3.11/site-packages/transformers/models/t5/modeling_tf_t5.py", line 30, in <module>
+    from ...activations_tf import get_tf_activation
+  File "/home/hemanth/.venv/lib/python3.11/site-packages/transformers/activations_tf.py", line 27, in <module>
+    raise ValueError(
+ValueError: Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/main.py", line 107, in <module>
+    grammar = GrammarCorrection(input_file, output_file, model_name)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/src/SpeechText/pipeline/s_06_ENG_GRAMMAR_VENNIFY.py", line 18, in __init__
+    self.corrector = pipeline("text2text-generation", model=model_name)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemanth/.venv/lib/python3.11/site-packages/transformers/pipelines/__init__.py", line 895, in pipeline
+    framework, model = infer_framework_load_model(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemanth/.venv/lib/python3.11/site-packages/transformers/pipelines/base.py", line 258, in infer_framework_load_model
+    _class = getattr(transformers_module, f"TF{architecture}", None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemanth/.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 1558, in __getattr__
+    value = getattr(module, name)
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemanth/.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 1557, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hemanth/.venv/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 1569, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import transformers.models.t5.modeling_tf_t5 because of the following error (look up to see its traceback):
+Your currently installed version of Keras is Keras 3, but this is not yet supported in Transformers. Please install the backwards-compatible tf-keras package with `pip install tf-keras`.
+[2024-08-05 19:01:55,099: INFO: main: ********** Stage 0 Audio Denoising started **********]
+[2024-08-05 19:02:09,291: INFO: s_00_DENOISER_DNS_64: STOI SCORE : 0.9999900286203258]
+[2024-08-05 19:02:09,294: INFO: main: ********** Stage 0 Audio Denoising completed **********
+
+]
+[2024-08-05 19:02:09,294: INFO: main: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 19:02:15,092: INFO: run_stage_01: ********** Stage 1 Speech Diarization started **********]
+[2024-08-05 19:02:15,093: INFO: s_01_DASHBOARD_FLAVOUR: Processing file: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3]
+[2024-08-05 19:02:16,129: WARNING: train_logger: torchvision is not available - cannot save figures]
+[2024-08-05 19:02:24,068: INFO: s_01_DASHBOARD_FLAVOUR: Number of segments detected: 1]
+[2024-08-05 19:02:24,068: INFO: s_01_DASHBOARD_FLAVOUR: Processing segment 0: speaker=speaker_SPEAKER_00, start=1.6, end=11.6]
+[2024-08-05 19:02:24,068: INFO: s_01_DASHBOARD_FLAVOUR: Running ffmpeg command: ffmpeg -y -i /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_00/Cleaned_denoiser_facebook_1_input.mp3 -ss 1.6 -to 11.6 -c:a libmp3lame -q:a 0 -vn -c copy /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_01/AUDIO/CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 19:02:24,148: INFO: s_01_DASHBOARD_FLAVOUR: Created segment file: CUT_Cleaned_denoiser_facebook_1_input.mp3__0__.mp3]
+[2024-08-05 19:02:24,148: INFO: s_01_DASHBOARD_FLAVOUR: Total number of files processed: 1]
+[2024-08-05 19:02:24,148: INFO: s_01_DASHBOARD_FLAVOUR: Total number of output files created: 1]
+[2024-08-05 19:02:24,148: INFO: run_stage_01: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 19:02:25,200: INFO: main: ********** Stage 1 Speech Diarization completed **********
+
+]
+[2024-08-05 19:02:25,200: INFO: main: ********** Stage 2 Audio Transcription started **********]
+[2024-08-05 19:02:28,092: INFO: main: ********** Stage 2 Audio Transcription completed **********
+
+]
+[2024-08-05 19:02:28,092: INFO: main: ********** Stage 3 Text Punctuation started **********]
+[2024-08-05 19:02:30,179: INFO: s_03_PUNCT_PCS47LANG: Punctuation results saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_03/03_punctuation.txt]
+[2024-08-05 19:02:30,179: INFO: main: ********** Stage 3 Text Punctuation completed **********
+
+]
+[2024-08-05 19:02:30,180: INFO: main: ********** Stage 4 Transliteration started **********]
+[2024-08-05 19:02:30,180: INFO: s_04_TRANSLIT_OM: Transliterated text saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_04/04_transliteration.txt]
+[2024-08-05 19:02:30,180: INFO: main: ********** Stage 4 Transliteration completed **********
+
+]
+[2024-08-05 19:02:30,180: INFO: main: ********** Stage 5 Translation started **********]
+[2024-08-05 19:02:30,180: INFO: s_05_TRANSLATE_AI4BHARAT: Using device: cpu]
+[2024-08-05 19:02:50,580: INFO: s_05_TRANSLATE_AI4BHARAT: Translations saved to: /home/hemanth/only_ml/CDSAML-Kan-Eng-Speect-Text/artifacts/STAGE_05/05_translation.txt]
+[2024-08-05 19:02:50,581: INFO: main: ********** Stage 5 Translation completed **********
+
+]
+[2024-08-05 19:02:50,581: INFO: main: ********** Stage 6 English Grammar Correction started **********]

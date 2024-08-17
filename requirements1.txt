@@ -1,0 +1,7 @@
+torch
+pyannote.audio
+ipython
+torchaudio
+soundfile
+pystoi
+transformers

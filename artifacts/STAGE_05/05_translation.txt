@@ -1,0 +1,22 @@
+Output: Input: My name is Hemanth and I am studying in TS University and I am a second year student.
+Output: My name is Hemanth, I am studying in TS University, I am a second year student.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
+Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University
+Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.

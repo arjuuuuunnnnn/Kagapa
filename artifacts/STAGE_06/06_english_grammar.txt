@@ -1,0 +1,1 @@
+Output: Output: Input: I am Samrid I like dog, cow and cat What is your name I am studying in PS University Output: My name is Samrid, I like dog, cow and cat. What's your name? I'm studying at PS University.
